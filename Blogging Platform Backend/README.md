@@ -33,3 +33,6 @@ A Django-based blogging platform where users can:
 ✅ CRUD for Blog Posts  
 ✅ Commenting System  
 ✅ Styled with Bootstrap  
+![Screenshot (1111)](https://github.com/user-attachments/assets/10d5bf47-64bc-4a1e-82b1-a78bc95b2896)
+![Screenshot (1112)](https://github.com/user-attachments/assets/06bf62ae-3da2-4565-9e30-c967f96d2113)
+![Screenshot (1113)](https://github.com/user-attachments/assets/30e38edb-919f-4061-8d1a-f21fe31af4e4)
