@@ -1,0 +1,21 @@
+{% extends 'blog/base.html' %}
+{% block title %}{{ post.title|default:"New Post" }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center">{% if post %}Edit Post{% else %}New Post{% endif %}</h2>
+    <form method="post" class="card p-4 shadow-sm">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" name="title" class="form-control" placeholder="Enter title" value="{{ post.title|default:'' }}" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Content</label>
+            <textarea name="content" class="form-control" rows="5" placeholder="Enter content" required>{{ post.content|default:'' }}</textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Save</button>
+        <a href="{% url 'post_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}
